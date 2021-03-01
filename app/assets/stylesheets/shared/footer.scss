@@ -2,8 +2,9 @@
 /* items/index.htmlの広告cssを所々使いまわしています。 */
 
 .ad-footer-contents {
-  width: 100vw;
-  background-image: image-url('furima-footer.png');
+  width: 100vw; 
+  height: 55vh;
+  background-image: image-url('simplycook-footer.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -31,8 +32,8 @@
 .footer {
   width: 100vw;
   padding: 5vh 0;
-  color: #FFF;
-  background-color: #272727;
+  color: #272727;
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .footer-link {
-  color: #FFF;
+  color: #272727;
   font-size: 12px;
   line-height: 30px;
 }

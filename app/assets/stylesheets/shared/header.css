@@ -4,7 +4,7 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
+  padding: 2vh 20vw;
   display: flex;
   flex-direction: column;
 }
@@ -37,7 +37,7 @@
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: #FF9933;
   padding: 8px;
 }
 
@@ -68,6 +68,7 @@
 
 .brand-list {
   text-decoration: none;
+  margin-right: 3vw;
   color: #333333;
 }
 

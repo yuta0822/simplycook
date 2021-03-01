@@ -13,6 +13,11 @@
 | first_name_kana    | string | null: false              |
 | birthdate          | date   | null: false              |
 
+### Association
+- has_many: items 
+- has_many: likes 
+- has_many: comments
+
 
 ##  items テーブル
 
@@ -35,3 +40,32 @@
 - belongs_to_active_hash :time
 - belongs_to_active_hash :cost
 - belongs_to             :user
+- has_many: likes 
+- has_many: comments
+
+
+##  likes テーブル
+
+| Column        | Type       | Options                         |
+| -----------   | ---------- | ------------------------------ |
+| user          | references | null: false, foreign_key: true |
+| items         | references | null: false, foreign_key: true |
+
+
+### Association
+- belongs_to: user
+- belongs_to: items
+
+
+##  comments テーブル
+
+| Column        | Type       | Options                        |
+| -----------   | ---------- | ------------------------------ |
+| user          | references | null: false, foreign_key: true |
+| items         | references | null: false, foreign_key: true |
+| comment       | text       | null: false                    |
+
+
+### Association
+- belongs_to: user
+- belongs_to: items
